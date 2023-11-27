@@ -5,7 +5,6 @@
 #ifndef BITCOIN_CRYPTO_RIPEMD160_H
 #define BITCOIN_CRYPTO_RIPEMD160_H
 
-// #include <cstdlib>
 #include <stdint.h>
 
 typedef uint32_t size_t;
@@ -39,7 +38,6 @@ void __attribute__((export_name("RIPEMD160"))) RIPEMD160 (const unsigned char* d
     CRIPEMD160 RIPEMD160;
     RIPEMD160.Write (data, hash - data);
     RIPEMD160.Finalize (hash);
-    RIPEMD160.Reset ( );
 }
 
 #endif // BITCOIN_CRYPTO_RIPEMD160_H
