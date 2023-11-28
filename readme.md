@@ -16,5 +16,5 @@ console.log(digest)
 ## Development
 The following command compiles the sources to wasm:
 ```sh
-clang src/ripemd160.cpp --no-standard-libraries --target=wasm32 -Wl,--no-entry -o ripemd160.wasm
+clang src/ripemd160.cpp -O2 --no-standard-libraries --target=wasm32 -Wl,--no-entry -o ripemd160.wasm
 ```
